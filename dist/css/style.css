@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 
 /*
 ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
@@ -1021,11 +1021,6 @@ h1 {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-.text-slate-600{
-  --tw-text-opacity: 1;
-  color: rgb(71 85 105 / var(--tw-text-opacity));
-}
-
 .text-green-500{
   --tw-text-opacity: 1;
   color: rgb(34 197 94 / var(--tw-text-opacity));
@@ -1099,7 +1094,7 @@ h1 {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Alata", sans-serif;
   background-image: url("/dist/img/bg.jpg");
 }
 
@@ -1294,5 +1289,10 @@ body {
   .lg\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .lg\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 }
