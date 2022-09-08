@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/css/style.css --watch"
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/css/style.css --watch",
+    "write": "npx prettier --write index.html"
   },
   "keywords": [],
   "author": "",
