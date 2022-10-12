@@ -687,10 +687,6 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.mt-7{
-  margin-top: 1.75rem;
-}
-
 .mt-4{
   margin-top: 1rem;
 }
@@ -787,9 +783,8 @@ video {
   max-width: 32rem;
 }
 
-.max-w-max{
-  max-width: -moz-max-content;
-  max-width: max-content;
+.max-w-screen-xl{
+  max-width: 1440px;
 }
 
 .max-w-xs{
@@ -806,10 +801,6 @@ video {
 
 .max-w-4xl{
   max-width: 56rem;
-}
-
-.max-w-screen-xl{
-  max-width: 1440px;
 }
 
 .-translate-x-1\/2{
@@ -854,12 +845,12 @@ video {
   justify-content: space-between;
 }
 
-.gap-6{
-  gap: 1.5rem;
-}
-
 .gap-8{
   gap: 2rem;
+}
+
+.gap-6{
+  gap: 1.5rem;
 }
 
 .gap-x-4{
@@ -1041,9 +1032,9 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .px-4{
@@ -1066,11 +1057,6 @@ video {
   padding-right: 0px;
 }
 
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .pt-6{
   padding-top: 1.5rem;
 }
@@ -1089,10 +1075,6 @@ video {
 
 .pb-8{
   padding-bottom: 2rem;
-}
-
-.pt-4{
-  padding-top: 1rem;
 }
 
 .text-center{
@@ -1399,6 +1381,10 @@ body {
     max-width: 56rem;
   }
 
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1421,12 +1407,6 @@ body {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-
-  .md\:space-x-6 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:text-left{
@@ -1455,12 +1435,12 @@ body {
 }
 
 @media (min-width: 1440px){
-  .xl\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .xl\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .xl\:gap-x-6{
