@@ -12,81 +12,56 @@
   </head>
   <body>
     <!-- Navbar  -->
-    <section id="home">
-      <!-- Hero Container -->
-      <div class="container mx-auto max-w-6xl px-6 py-12">
-        <!-- Menu/Logo Container -->
-        <nav class="flex items-center justify-between font-medium text-black">
-          <!-- Logo -->
-          <img src="#" class="w-32" id="logo" />
-          <!-- Menu -->
-          <div class="font-alata hidden h-10 md:flex md:space-x-8">
-            <div class="group">
-              <a href="./index.html">About Us</a>
-              <div
-                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-              ></div>
-            </div>
-            <div class="group">
-              <a href="#">Community</a>
-              <div
-                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-              ></div>
-            </div>
-            <div class="group">
-              <a href="#">Team</a>
-              <div
-                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-              ></div>
-            </div>
-            <div class="group">
-              <a href="#">Market</a>
-              <div
-                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-              ></div>
-            </div>
-            <div class="group">
-              <a href="#">Roadmap</a>
-              <div
-                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-              ></div>
-            </div>
-          </div>
-          <!-- Hamburger Button -->
-          <div class="md:hidden">
-            <button
-              id="menu-btn"
-              class="hamburger block focus:outline-none lg:hidden"
-              type="button"
-            >
-              <span class="hamburger-top"></span>
-              <span class="hamburger-middle"></span>
-              <span class="hamburger-bottom"></span>
-            </button>
-          </div>
-        </nav>
+    <nav class="container relative mx-auto p-6">
+      <!-- Flex Containe -->
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="pt-2">
+          <img src="#" alt="logo" class="w-32" />
+        </div>
+        <!-- Menu Items -->
+        <div class="hidden space-x-6 md:flex">
+          <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+          <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+        </div>
+        <!-- Button -->
+        <a href="#" class="butang3"> Get Started </a>
 
-        <!-- Mobile Menu -->
-        <div
-          id="menu"
-          class="z-100 absolute left-6 right-6 top-20 hidden rounded-lg bg-darkViolet p-6"
+        <!-- Hamburger Icon -->
+        <button
+          id="menu-btn"
+          class="hamburger block focus:outline-none lg:hidden"
+          type="button"
         >
-          <div
-            class="flex w-full flex-col items-center justify-center space-y-6 rounded-sm font-bold text-white"
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="menu"
+        class="z-100 absolute left-6 right-6 top-20 hidden rounded-lg bg-darkViolet p-6"
+      >
+        <div
+          class="flex w-full flex-col items-center justify-center space-y-6 rounded-sm font-bold text-white"
+        >
+          <a href="#" class="w-full text-center">Features</a>
+          <a href="#" class="w-full text-center">Pricing</a>
+          <a href="#" class="w-full text-center">Resources</a>
+          <a href="#" class="w-full border-t border-gray-400 pt-6 text-center"
+            >Login</a
           >
-            <a href="#" class="w-full text-center">Features</a>
-            <a href="#" class="w-full text-center">Pricing</a>
-            <a href="#" class="w-full text-center">Resources</a>
-            <a href="#" class="w-full border-t border-gray-400 pt-6 text-center"
-              >Login</a
-            >
-            <a href="#" class="w-full rounded-full bg-cyan py-3 text-center"
-              >Connect Wallet</a
-            >
-          </div>
+          <a href="#" class="w-full rounded-full bg-cyan py-3 text-center"
+            >Connect Wallet</a
+          >
         </div>
       </div>
-    </section>
+    </nav>
     <!--  -->
     <section id="features">
       <div class="container mx-auto mt-16 px-6">
@@ -584,6 +559,111 @@
             </section>
           </main>
           <!--  -->
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <!-- Footer -->
+    <section id="footer">
+      <div class="border-base-100 bg-base-100 mt-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 gap-8 pt-8 lg:grid-cols-2">
+            <div>
+              <img class="h-10 w-auto" alt="#" src="#" />
+              <p class="mt-4 text-sm">
+                Technology needs to support human initiatives not substitute
+                them.
+              </p>
+              <a
+                class="text-textPrimary dark:text-dmTextPrimary mt-4 text-sm hover:underline"
+                href="nizam.active@gmail.com"
+                id="email"
+                >nizam.active@gmail.com</a
+              >
+            </div>
+            <div class="grid grid-cols-1 gap-8 xl:grid-cols-2">
+              <div class="text-sm">
+                <p class="text-textPrimary dark:text-dmTextPrimary mb-2">
+                  Our community
+                </p>
+                <ul>
+                  <li class="mt-2">
+                    <a
+                      class="hover:underline"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer"
+                      >Twitter</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <a
+                      class="hover:underline"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <a
+                      class="hover:underline"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <a
+                      class="hover:underline"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer"
+                      >Telegram</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="text-sm">
+                <p class="text-textPrimary dark:text-dmTextPrimary mb-2">
+                  Company
+                </p>
+                <ul>
+                  <li class="mt-2">
+                    <a
+                      class="hover:underline"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer"
+                      >About us</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <a
+                      class="hover:underline"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer"
+                      >Career</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <a
+                      class="hover:underline"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer"
+                      >Terms and Conditions</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p class="pt-16 pb-8 text-center text-sm">
+            © 2022 Honor Protocol. All Rights Reserved.
+          </p>
         </div>
       </div>
     </section>
