@@ -8,17 +8,19 @@
 
 body {
   font-family: "Outfit", sans-serif;
+  width: 100%;
+  height: 100vh;
 }
 
 @layer components {
   .butang {
-    @apply transform rounded-full border border-gray-300 px-4 py-2 text-sm font-bold shadow-sm hover:scale-105 focus:outline-none focus:ring-2;
+    @apply transform rounded-full border border-gray-300 px-4 py-2 font-Alata text-sm font-bold shadow-sm hover:scale-105 focus:outline-none focus:ring-2;
   }
   .butang2 {
-    @apply transform rounded-full border border-gray-300 px-6 py-4 text-sm font-bold shadow-sm hover:scale-105 focus:outline-none focus:ring-2;
+    @apply transform rounded-full border border-gray-300 px-6 py-4 font-Alata text-sm font-bold shadow-sm hover:scale-105 focus:outline-none focus:ring-2;
   }
   .butang3 {
-    @apply transform rounded-full border border-gray-300 p-3 px-6 pt-2 text-sm font-bold shadow-sm hover:scale-105 focus:outline-none focus:ring-2;
+    @apply transform rounded-full border border-gray-300 p-3 px-6 pt-2 font-Alata text-sm font-bold shadow-sm hover:scale-105 focus:outline-none focus:ring-2;
   }
 }
 
