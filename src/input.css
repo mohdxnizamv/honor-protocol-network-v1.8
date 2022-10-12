@@ -18,7 +18,7 @@ body {
     @apply transform rounded-full border border-gray-300 px-6 py-4 text-sm font-bold shadow-sm hover:scale-105 focus:outline-none focus:ring-2;
   }
   .butang3 {
-    @apply hidden rounded-full bg-red p-3 px-6 pt-2 text-white hover:bg-red md:block;
+    @apply hidden rounded-full bg-dark-blue-card-bg p-3 px-6 pt-2 text-white hover:bg-darkViolet md:block;
   }
 }
 
