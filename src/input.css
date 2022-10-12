@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 
 @tailwind base;
@@ -6,4 +7,62 @@
 
 body {
   font-family: "Alata", sans-serif;
+}
+
+@layer components {
+  .butang {
+    @apply transform rounded-full border border-gray-300 bg-base-100 px-4 py-2 text-sm font-bold shadow-sm hover:scale-105 focus:outline-none focus:ring-2;
+  }
+  .butang2 {
+    @apply transform rounded-full border border-gray-300 bg-base-100 px-6 py-4 text-sm font-bold shadow-sm hover:scale-105 focus:outline-none focus:ring-2;
+  }
+}
+
+/* HAMBURGER MENU */
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background: #9c9aa6;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
