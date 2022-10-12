@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Alata: ["Alata", "sans-serif"],
+        Outfit: ["Outfit", "sans-serif"],
         Josefin: ["Josefin Sans", "sans-serif"],
       },
       colors: {
@@ -21,6 +22,12 @@ module.exports = {
         grayishViolet: "hsl(257, 7%, 63%)",
         veryDarkBlue: "hsl(255, 11%, 22%)",
         veryDarkViolet: "hsl(260, 8%, 14%) ",
+        "soft-blue": "hsl(215, 51%, 70%)",
+        "dark-blue": {
+          "main-bg": "hsl(217, 54%, 11%)",
+          "card-bg": "hsl(216, 50%, 16%)",
+          line: "hsl(215, 32%, 27%)",
+        },
       },
     },
   },
