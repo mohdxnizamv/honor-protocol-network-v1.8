@@ -12,28 +12,28 @@
   </head>
   <body>
     <!-- Navbar  -->
-    <nav class="container relative mx-auto p-6 font-Alata">
+    <nav class="container relative mx-auto max-w-screen-xl p-3">
       <!-- Flex Container -->
       <div class="flex items-center justify-between">
         <!-- Logo -->
-        <div class="pt-2">
-          <img src="#" alt="logo" class="w-32" />
+        <div class="pt-3">
+          <img src="./dist/img/salam-x-phone.png" alt="logo" class="w-32" />
         </div>
         <!-- Menu Items -->
         <div class="hidden space-x-14 md:flex">
-          <a href="./index.html" class="hover:text-darkGrayishBlue">Home</a>
-          <a href="#" class="hover:text-darkGrayishBlue">Mint NFT</a>
-          <a href="#" class="hover:text-darkGrayishBlue">Yield-Ranks</a>
-          <a href="#" class="hover:text-darkGrayishBlue">NFT Lounge</a>
-          <a href="#" class="hover:text-darkGrayishBlue">Marketplace</a>
+          <a href="./index.html" class="hover:text-red">Home</a>
+          <a href="#" class="hover:text-red">Mint NFT</a>
+          <a href="#" class="hover:text-red">Yield-Ranks</a>
+          <a href="#" class="hover:text-red">NFT Lounge</a>
+          <a href="#" class="hover:text-red">Marketplace</a>
         </div>
         <!-- Button -->
-        <a href="#" class="butang hidden md:block"> Connect Wallet </a>
+        <a href="#" class="butang hidden md:flex"> Connect Wallet </a>
 
         <!-- Hamburger Icon -->
         <button
           id="menu-btn"
-          class="hamburger block focus:outline-none lg:hidden"
+          class="hamburger block focus:outline-none md:hidden"
           type="button"
         >
           <span class="hamburger-top"></span>
@@ -45,15 +45,17 @@
       <!-- Mobile Menu -->
       <div
         id="menu"
-        class="z-100 absolute left-6 right-6 top-20 hidden rounded-lg bg-darkViolet p-6"
+        class="z-100 absolute left-3 right-3 top-20 hidden rounded-lg bg-darkViolet p-3"
       >
         <div
           class="flex w-full flex-col items-center justify-center space-y-6 rounded-sm font-bold text-white"
         >
-          <a href="#" class="w-full text-center">Features</a>
-          <a href="#" class="w-full text-center">Pricing</a>
-          <a href="#" class="w-full text-center">Resources</a>
-          <a href="#" class="w-full border-t border-gray-400 pt-6 text-center"
+          <a href="#" class="w-full text-center hover:text-red">Features</a>
+          <a href="#" class="w-full text-center hover:text-red">Pricing</a>
+          <a href="#" class="w-full text-center hover:text-red">Resources</a>
+          <a
+            href="#"
+            class="w-full border-t border-gray-400 pt-6 text-center hover:text-red"
             >Community</a
           >
           <a href="#" class="w-full rounded-full bg-cyan py-3 text-center"
@@ -65,10 +67,12 @@
     <!--  -->
     <section id="features">
       <div class="container mx-auto mt-16 px-6">
-        <h2 class="mb-6 items-center text-center text-4xl font-semibold">
+        <h2
+          class="mb-6 items-center text-center text-4xl font-bold xl:text-5xl"
+        >
           Collection NFT Honor Protocol
         </h2>
-        <p class="text-grayishBlue mx-auto max-w-md text-center">
+        <p class="text-grayishBlue mx-auto max-w-md text-center font-Josefin">
           Our aim is to make it quick and easy for you to access your favorite
           websites. Your bookmarks sync between your devices so you can access
           them on the go.
@@ -77,8 +81,10 @@
     </section>
     <!--  -->
     <section id="nft">
-      <div class="mx-auto mt-20 max-w-max items-center px-5">
-        <div class="mt-7 flex flex-col gap-6 md:flex-row md:space-x-6">
+      <div class="container mx-auto max-w-screen-xl py-6 sm:px-6 xl:px-8">
+        <div
+          class="grid grid-cols-1 gap-x-4 gap-y-6 pt-8 md:grid-cols-2 xl:grid-cols-4 xl:gap-x-6"
+        >
           <main>
             <section
               class="mx-5 max-w-xs rounded-xl bg-dark-blue-card-bg p-5 shadow-2xl"
@@ -353,8 +359,10 @@
 
     <!--  -->
     <section id="nft2">
-      <div class="mx-auto mt-20 max-w-max items-center px-5">
-        <div class="mt-7 flex flex-col gap-6 md:flex-row md:space-x-6">
+      <div class="container mx-auto max-w-screen-xl py-6 sm:px-6 xl:px-8">
+        <div
+          class="grid grid-cols-1 gap-x-4 gap-y-6 pt-8 md:grid-cols-2 xl:grid-cols-4 xl:gap-x-6"
+        >
           <main>
             <section
               class="mx-5 max-w-xs rounded-xl bg-dark-blue-card-bg p-5 shadow-2xl"
@@ -626,7 +634,7 @@
         </div>
       </div>
     </section>
-    <!--  -->
+
     <!-- Footer -->
     <section id="footer">
       <div class="border-base-100 bg-base-100 mt-20">
