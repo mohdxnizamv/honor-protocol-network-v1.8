@@ -24,6 +24,12 @@ body {
   }
 }
 
+/* @media screen(xl) {
+  body {
+    @apply bg-black bg-opacity-50;
+  }
+} */
+
 /* HAMBURGER MENU */
 
 .hamburger {
