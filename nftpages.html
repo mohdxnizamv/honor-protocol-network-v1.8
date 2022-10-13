@@ -28,7 +28,7 @@
           <a href="#" class="hover:text-red">Marketplace</a>
         </div>
         <!-- Button -->
-        <a href="#" class="butang hidden md:flex"> Connect Wallet </a>
+        <a id="connect" class="butang hidden md:flex"> Connect Wallet </a>
 
         <!-- Hamburger Icon -->
         <button
@@ -58,9 +58,12 @@
             class="w-full border-t border-gray-400 pt-6 text-center hover:text-red"
             >Community</a
           >
-          <a href="#" class="w-full rounded-full bg-cyan py-3 text-center"
-            >Connect Wallet</a
+          <a
+            id="connect"
+            class="w-full rounded-full bg-cyan py-3 text-center hover:text-red"
           >
+            Connect Wallet
+          </a>
         </div>
       </div>
     </nav>
@@ -745,5 +748,6 @@
     </section>
 
     <script src="/dist/js/script.js"></script>
+    <script src="/dist/js/navToggle.js"></script>
   </body>
 </html>

@@ -5,7 +5,7 @@
   "scripts": {
     "watch": "npx tailwindcss -i ./src/input.css -o ./dist/css/style.css --watch",
     "build": "npx tailwindcss -i ./src/input.css -o ./dist/css/style.css",
-    "write": "npx prettier --write index.html"
+    "write": "npx prettier --write nftpages.html"
   },
   "keywords": [],
   "author": "",
