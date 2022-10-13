@@ -1363,11 +1363,6 @@ body {
   border-color: rgb(239 246 255 / var(--tw-border-opacity));
 }
 
-[data-mode="dark"] .dark\:bg-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 @media (min-width: 360px){
   .sm\:px-6{
     padding-left: 1.5rem;
