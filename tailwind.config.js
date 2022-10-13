@@ -31,5 +31,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  darkMode: ["class", '[data-mode="dark"]'],
 };
