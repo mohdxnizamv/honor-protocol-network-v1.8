@@ -8,8 +8,6 @@
 
 body {
   font-family: "Outfit", sans-serif;
-  width: 100%;
-  height: 100vh;
 }
 
 @layer components {
@@ -23,12 +21,6 @@ body {
     @apply transform rounded-full border border-gray-300 p-3 px-6 pt-2 font-Alata text-sm font-bold shadow-sm hover:scale-105 focus:outline-none focus:ring-2;
   }
 }
-
-/* @media screen(xl) {
-  body {
-    @apply bg-black bg-opacity-50;
-  }
-} */
 
 /* HAMBURGER MENU */
 
