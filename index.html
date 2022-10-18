@@ -1,132 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="dist/css/style.css" />
-    <title>Honor Protocol</title>
-  </head>
-  <body>
-    <!-- Navbar  -->
-    <section id="home">
-      <!-- Hero Container -->
-      <div class="container mx-auto max-w-6xl px-6 py-12 font-Alata">
-        <!-- Menu/Logo Container -->
-        <nav class="flex items-center justify-between font-medium text-black">
-          <!-- Logo -->
-          <img src="#" class="w-32" id="logo" />
-          <!-- Menu -->
-          <div class="font-alata hidden h-10 md:flex md:space-x-8">
-            <div class="group">
-              <a href="#">About Us</a>
-              <div
-                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-              ></div>
-            </div>
-            <div class="group">
-              <a href="#">Community</a>
-              <div
-                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-              ></div>
-            </div>
-            <div class="group">
-              <a href="#">Team</a>
-              <div
-                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-              ></div>
-            </div>
-            <div class="group">
-              <a href="#">Market</a>
-              <div
-                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-              ></div>
-            </div>
-            <div class="group">
-              <a href="#">Roadmap</a>
-              <div
-                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-              ></div>
-            </div>
-          </div>
-          <!-- Hamburger Button -->
-          <div class="md:hidden">
-            <button
-              id="menu-btn"
-              class="hamburger block focus:outline-none lg:hidden"
-              type="button"
-            >
-              <span class="hamburger-top"></span>
-              <span class="hamburger-middle"></span>
-              <span class="hamburger-bottom"></span>
-            </button>
-          </div>
-        </nav>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="dist/css/style.css" />
+        <title>Honor Protocol</title>
+    </head>
+    <body>
+        <!-- Navbar  -->
+        <section id="home">
+            <!-- Hero Container -->
+            <div class="container mx-auto max-w-6xl px-6 py-12 font-Alata">
+                <!-- Menu/Logo Container -->
+                <nav
+                    class="flex items-center justify-between font-medium text-black"
+                >
+                    <!-- Logo -->
+                    <img
+                        src="./dist/img/salam-x-phone.png"
+                        class="w-32 rounded-lg"
+                        id="logo"
+                        alt="logo"
+                    />
+                    <!-- Menu -->
+                    <div class="font-alata hidden h-10 md:flex md:space-x-8">
+                        <div class="group">
+                            <a href="#">About Us</a>
+                            <div
+                                class="mx-2 group-hover:border-b group-hover:border-blue-50"
+                            ></div>
+                        </div>
+                        <div class="group">
+                            <a href="#">Community</a>
+                            <div
+                                class="mx-2 group-hover:border-b group-hover:border-blue-50"
+                            ></div>
+                        </div>
+                        <div class="group">
+                            <a href="#">Team</a>
+                            <div
+                                class="mx-2 group-hover:border-b group-hover:border-blue-50"
+                            ></div>
+                        </div>
+                        <div class="group">
+                            <a href="#">Market</a>
+                            <div
+                                class="mx-2 group-hover:border-b group-hover:border-blue-50"
+                            ></div>
+                        </div>
+                        <div class="group">
+                            <a href="#">Roadmap</a>
+                            <div
+                                class="mx-2 group-hover:border-b group-hover:border-blue-50"
+                            ></div>
+                        </div>
+                    </div>
+                    <!-- Hamburger Button -->
+                    <div class="md:hidden">
+                        <button
+                            id="menu-btn"
+                            class="hamburger block focus:outline-none lg:hidden"
+                            type="button"
+                        >
+                            <span class="hamburger-top"></span>
+                            <span class="hamburger-middle"></span>
+                            <span class="hamburger-bottom"></span>
+                        </button>
+                    </div>
+                </nav>
 
-        <!-- Mobile Menu -->
-        <div
-          id="menu"
-          class="z-100 absolute left-6 right-6 top-20 hidden rounded-lg bg-darkViolet p-6"
-        >
-          <div
-            class="flex w-full flex-col items-center justify-center space-y-6 rounded-sm font-bold text-white"
-          >
-            <a href="#" class="w-full text-center">Features</a>
-            <a href="#" class="w-full text-center">Pricing</a>
-            <a href="#" class="w-full text-center">Resources</a>
-            <a href="#" class="w-full border-t border-gray-400 pt-6 text-center"
-              >Login</a
-            >
-            <a href="#" class="w-full rounded-full bg-cyan py-3 text-center"
-              >Connect Wallet</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
+                <!-- Mobile Menu -->
+                <div
+                    id="menu"
+                    class="z-100 absolute left-6 right-6 top-20 hidden rounded-lg bg-darkViolet p-6"
+                >
+                    <div
+                        class="flex w-full flex-col items-center justify-center space-y-6 rounded-sm font-bold text-white"
+                    >
+                        <a href="#" class="w-full text-center">Features</a>
+                        <a href="#" class="w-full text-center">Pricing</a>
+                        <a href="#" class="w-full text-center">Resources</a>
+                        <a
+                            href="#"
+                            class="w-full border-t border-gray-400 pt-6 text-center"
+                            >Login</a
+                        >
+                        <a
+                            href="#"
+                            class="w-full rounded-full bg-cyan py-3 text-center"
+                            >Connect Wallet</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Hero Section -->
-    <section id="hero">
-      <!-- Flex Container -->
-      <div
-        class="container mx-auto mt-20 flex flex-col-reverse items-center space-y-0 px-6 md:flex-row md:space-y-0"
-      >
-        <!-- Left Item -->
-        <div class="mb-14 flex flex-col space-y-8 md:w-1/2">
-          <h1 class="max-w-md text-center text-4xl md:text-left md:text-5xl">
-            What is Honor Protocol ?
-          </h1>
-          <p class="max-w-lg font-Josefin md:text-left">
-            SLMX will be the world's first global decentralized cryptocurrency
-            market platform that only ensures the world's first syariah based
-            platform. This service will be a gateway to more than 500 million
-            users worldwide to sending, receiving, spending and access to a more
-            secure syariah based based cryptocurrency.
-          </p>
-          <p class="max-w-lg font-Josefin md:text-left">
-            SLMX is a syariah based DeFi project that will be driven alongside
-            the communities built on the Binance Smart Chain #BSC and will
-            support collaboration over time with major blockchain. SLMX will
-            bring the most revolutionary mechanisms to the ecosystem such as
-            capita gain, staking / dividend, governance platform, education
-            center, marketplace, visual development and various ecosystem
-            development in the future as long as it complies with shariah.
-          </p>
+        <!-- Hero Section -->
+        <section id="hero">
+            <!-- Flex Container -->
+            <div
+                class="container mx-auto mt-20 flex flex-col-reverse items-center space-y-0 px-6 md:flex-row md:space-y-0"
+            >
+                <!-- Left Item -->
+                <div class="mb-14 flex flex-col space-y-8 md:w-1/2">
+                    <h1
+                        class="max-w-md text-center text-4xl md:text-left md:text-5xl"
+                    >
+                        What is Honor Protocol ?
+                    </h1>
+                    <p class="max-w-lg font-Josefin md:text-left">
+                        SLMX will be the world's first global decentralized
+                        cryptocurrency market platform that only ensures the
+                        world's first syariah based platform. This service will
+                        be a gateway to more than 500 million users worldwide to
+                        sending, receiving, spending and access to a more secure
+                        syariah based based cryptocurrency.
+                    </p>
+                    <p class="max-w-lg font-Josefin md:text-left">
+                        SLMX is a syariah based DeFi project that will be driven
+                        alongside the communities built on the Binance Smart
+                        Chain #BSC and will support collaboration over time with
+                        major blockchain. SLMX will bring the most revolutionary
+                        mechanisms to the ecosystem such as capita gain, staking
+                        / dividend, governance platform, education center,
+                        marketplace, visual development and various ecosystem
+                        development in the future as long as it complies with
+                        shariah.
+                    </p>
 
-          <div class="flex justify-center md:justify-start">
-            <a href="nftpages.html" class="butang2"> Click Here </a>
-          </div>
-        </div>
-        <!-- Image -->
-        <div class="md:w-1/2">
-          <img
-            src="dist/img/bgb.png"
-            class="mx-auto"
-            alt="Intro illustration"
-          />
-        </div>
-      </div>
-    </section>
-    <script src="dist/js/navToggle.js"></script>
-  </body>
+                    <div class="flex justify-center md:justify-start">
+                        <a href="nftpages.html" class="butang2"> Click Here </a>
+                    </div>
+                </div>
+                <!-- Image -->
+                <div class="md:w-1/2">
+                    <img
+                        src="dist/img/bgb.png"
+                        class="mx-auto"
+                        alt="Intro illustration"
+                    />
+                </div>
+            </div>
+        </section>
+        <script src="dist/js/navToggle.js"></script>
+    </body>
 </html>
