@@ -6,12 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/css/style.css" />
 
-    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/ipfs/dist/index.min.js"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <title>Honor Protocol NFT</title>
   </head>
   <body class="dark:bg-darkBlue dark:text-white">
@@ -36,8 +30,16 @@
           <a href="#" class="hover:text-red">Marketplace</a>
         </div>
         <!-- Button -->
-        <div class="hidden md:flex">
-          <a id="connect" class="butang"> Connect Wallet </a>
+        <div id="app" class="hidden md:block">
+          <div id="disconnected">
+            <w3m-connect-button></w3m-connect-button>
+          </div>
+
+          <div id="connected" class="btn">
+            <button id="disconnect-btn">Disconnect</button>
+          </div>
+
+          <w3m-modal></w3m-modal>
         </div>
         <!-- Hamburger Icon -->
         <button
@@ -68,7 +70,18 @@
             class="w-full border-t border-gray-400 pt-6 text-center hover:text-red"
             >Community</a
           >
-          <button id="connect" class="btn">Connect Wallet</button>
+          <!-- Button -->
+          <div id="app">
+            <div id="disconnected">
+              <w3m-connect-button></w3m-connect-button>
+            </div>
+
+            <div id="connected" class="hidden md:block">
+              <button id="disconnect-btn">Disconnect</button>
+            </div>
+
+            <w3m-modal></w3m-modal>
+          </div>
         </div>
       </div>
     </nav>
@@ -751,8 +764,11 @@
       </div>
     </section>
     <!--  -->
-    <script src="./dist/js/script.js"></script>
-    <script src="./dist/js/navToggle.js"></script>
+    <script type="module" src="./src/main.js"></script>
+
+    <script src="./src/navToggle.js"></script>
+
+    <script src="./src/darkmode.js"></script>
 
     <script>
       if (
