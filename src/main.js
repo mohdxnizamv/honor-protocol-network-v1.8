@@ -5,7 +5,7 @@ import './actions';
 import './events';
 
 // Define constants
-const PROJECT_ID = '8e6b5ffdcbc9794bf9f4a1952578365b';
+const PROJECT_ID = '5faca337783ebbdba22ed3212ce88206';
 
 const clientConfig = {
   projectId: PROJECT_ID,
