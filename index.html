@@ -4,109 +4,769 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./dist/css/style.css" />
+    <link rel="stylesheet" href="/dist/css/style.css" />
 
-    <title>Honor Protocol</title>
+    <title>Honor Protocol NFT</title>
   </head>
   <body class="dark:bg-darkBlue dark:text-white">
     <!-- Navbar  -->
-    <section id="home">
-      <!-- Hero Container -->
-      <div class="container mx-auto max-w-6xl px-6 py-12 font-Alata">
-        <!-- Menu/Logo Container -->
-        <nav class="flex items-center justify-between font-medium">
-          <!-- Logo -->
+    <nav class="container relative mx-auto max-w-screen-xl px-6">
+      <!-- Flex Container -->
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="pt-3">
           <img
             src="./dist/img/salam-x-phone.png"
-            class="w-24 rounded-lg"
             alt="logo"
+            class="w-32 rounded-lg"
           />
-          <!-- Menu -->
-          <div class="hidden h-10 md:flex md:space-x-8">
-            <div class="group">
-              <a href="#">About Us</a>
-              <div
-                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-              ></div>
-            </div>
-            <div class="group">
-              <a href="#">Community</a>
-              <div
-                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-              ></div>
-            </div>
-            <div class="group">
-              <a href="#">Team</a>
-              <div
-                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-              ></div>
-            </div>
-            <div class="group">
-              <a href="#">Market</a>
-              <div
-                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-              ></div>
-            </div>
-            <div class="group">
-              <a href="#">Roadmap</a>
-              <div
-                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-              ></div>
-            </div>
+        </div>
+        <!-- Menu Items -->
+        <div class="hidden space-x-14 md:flex">
+          <a href="./index.html" class="hover:text-red">Home</a>
+          <a href="#" class="hover:text-red">Mint NFT</a>
+          <a href="#" class="hover:text-red">Yield-Ranks</a>
+          <a href="#" class="hover:text-red">NFT Lounge</a>
+          <a href="#" class="hover:text-red">Marketplace</a>
+        </div>
+        <!-- Button -->
+        <div id="app" class="hidden md:block">
+          <div id="disconnected">
+            <w3m-connect-button></w3m-connect-button>
           </div>
-        </nav>
+
+          <div id="connected" class="btn">
+            <button id="disconnect-btn">Disconnect</button>
+          </div>
+
+          <w3m-modal></w3m-modal>
+        </div>
+        <!-- Hamburger Icon -->
+        <button
+          id="menu-btn"
+          class="hamburger block focus:outline-none md:hidden"
+          type="button"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="menu"
+        class="z-100 absolute left-3 right-3 top-20 hidden rounded-lg bg-darkViolet p-3"
+      >
+        <div
+          class="flex w-full flex-col items-center justify-center space-y-6 rounded-sm font-bold text-white"
+        >
+          <a href="./index.html" class="w-full text-center hover:text-red"
+            >Home</a
+          >
+          <a href="#" class="w-full text-center hover:text-red">Pricing</a>
+          <a href="#" class="w-full text-center hover:text-red">Resources</a>
+          <a
+            href="#"
+            class="w-full border-t border-gray-400 pt-6 text-center hover:text-red"
+            >Community</a
+          >
+          <!-- Button -->
+          <div id="app">
+            <div id="disconnected">
+              <w3m-connect-button></w3m-connect-button>
+            </div>
+
+            <div id="connected" class="hidden md:block">
+              <button id="disconnect-btn">Disconnect</button>
+            </div>
+
+            <w3m-modal></w3m-modal>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--  -->
+    <section id="features">
+      <div class="container mx-auto mt-16 px-6">
+        <h2
+          class="mb-6 items-center text-center text-4xl font-bold xl:text-5xl"
+        >
+          Collection NFT Honor Protocol
+        </h2>
+        <p class="text-grayishBlue mx-auto max-w-md text-center font-Josefin">
+          Our aim is to make it quick and easy for you to access your favorite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+      </div>
+    </section>
+    <!--  -->
+    <section id="nft">
+      <div class="container mx-auto max-w-screen-xl py-6 sm:px-6 xl:px-8">
+        <div
+          class="grid grid-cols-1 gap-x-4 gap-y-6 pt-8 md:grid-cols-3 xl:grid-cols-4 xl:gap-x-6"
+        >
+          <main>
+            <section
+              class="mx-5 max-w-xs rounded-xl bg-dark-blue-card-bg p-5 shadow-2xl"
+            >
+              <a
+                href="#"
+                class="group relative block overflow-hidden rounded-md"
+              >
+                <div
+                  class="invisible absolute inset-0 bg-cyan/50 group-hover:visible"
+                >
+                  <img
+                    src="/dist/img/icon-view.svg"
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                    alt="eye icon"
+                  />
+                </div>
+                <img
+                  src="/dist/img/private.png"
+                  alt="equilibrium"
+                  class="rounded-lg"
+                />
+              </a>
+
+              <h1>
+                <a
+                  href="#"
+                  class="my-4 block text-lg font-semibold text-white hover:text-cyan"
+                  >PRIVATE #3429</a
+                >
+              </h1>
+
+              <p class="font-light text-soft-blue">25 Honor + 25 BUSD.</p>
+
+              <div class="mt-4 flex items-center justify-between">
+                <div class="flex space-x-2 text-cyan">
+                  <img
+                    src="/dist/img/icon-binance.svg"
+                    alt="ethereum icon"
+                    class="w-5"
+                  />
+                  <p>1.0 BNB</p>
+                </div>
+                <div
+                  class="flex items-center space-x-2 whitespace-nowrap text-soft-blue"
+                >
+                  <img src="/dist/img/icon-clock.svg" alt="clock icon" />
+                  <p>3 days left</p>
+                </div>
+              </div>
+
+              <hr class="mt-6 border-dark-blue-line" />
+
+              <div class="mt-4 flex items-center space-x-2">
+                <img
+                  src="/dist/img/image-avatar.png"
+                  alt="avatar"
+                  class="h-8 w-8 rounded-full"
+                />
+                <p class="text-white">
+                  <span class="text-soft-blue">Creation of</span>
+                  <a href="#" class="hover:text-cyan">mohdx nizamv</a>
+                </p>
+              </div>
+            </section>
+          </main>
+          <!--  -->
+          <main>
+            <section
+              class="mx-5 max-w-xs rounded-xl bg-dark-blue-card-bg p-5 shadow-2xl"
+            >
+              <a
+                href="#"
+                class="group relative block overflow-hidden rounded-md"
+              >
+                <div
+                  class="invisible absolute inset-0 bg-cyan/50 group-hover:visible"
+                >
+                  <img
+                    src="/dist/img/icon-view.svg"
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                    alt="eye icon"
+                  />
+                </div>
+                <img
+                  src="/dist/img/corporal.png"
+                  alt="equilibrium"
+                  class="rounded-lg"
+                />
+              </a>
+
+              <h1>
+                <a
+                  href="#"
+                  class="my-4 block text-lg font-semibold text-white hover:text-cyan"
+                  >CORPORAL #3429</a
+                >
+              </h1>
+
+              <p class="font-light text-soft-blue">50 Honor + 50 BUSD.</p>
+
+              <div class="mt-4 flex items-center justify-between">
+                <div class="flex space-x-2 text-cyan">
+                  <img
+                    src="/dist/img/icon-binance.svg"
+                    alt="ethereum icon"
+                    class="w-5"
+                  />
+                  <p>1.0 BNB</p>
+                </div>
+                <div
+                  class="flex items-center space-x-2 whitespace-nowrap text-soft-blue"
+                >
+                  <img src="/dist/img/icon-clock.svg" alt="clock icon" />
+                  <p>3 days left</p>
+                </div>
+              </div>
+
+              <hr class="mt-6 border-dark-blue-line" />
+
+              <div class="mt-4 flex items-center space-x-2">
+                <img
+                  src="/dist/img/image-avatar.png"
+                  alt="avatar"
+                  class="h-8 w-8 rounded-full"
+                />
+                <p class="text-white">
+                  <span class="text-soft-blue">Creation of</span>
+                  <a href="#" class="hover:text-cyan">mohdx nizamv</a>
+                </p>
+              </div>
+            </section>
+          </main>
+          <!--  -->
+          <main>
+            <section
+              class="mx-5 max-w-xs rounded-xl bg-dark-blue-card-bg p-5 shadow-2xl"
+            >
+              <a
+                href="#"
+                class="group relative block overflow-hidden rounded-md"
+              >
+                <div
+                  class="invisible absolute inset-0 bg-cyan/50 group-hover:visible"
+                >
+                  <img
+                    src="/dist/img/icon-view.svg"
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                    alt="eye icon"
+                  />
+                </div>
+                <img
+                  src="/dist/img/sergeant.png"
+                  alt="equilibrium"
+                  class="rounded-lg"
+                />
+              </a>
+
+              <h1>
+                <a
+                  href="#"
+                  class="my-4 block text-lg font-semibold text-white hover:text-cyan"
+                  >SERGEANT #3429</a
+                >
+              </h1>
+
+              <p class="font-light text-soft-blue">75 Honor + 75 BUSD.</p>
+
+              <div class="mt-4 flex items-center justify-between">
+                <div class="flex space-x-2 text-cyan">
+                  <img
+                    src="/dist/img/icon-binance.svg"
+                    alt="ethereum icon"
+                    class="w-5"
+                  />
+                  <p>1.0 BNB</p>
+                </div>
+                <div
+                  class="flex items-center space-x-2 whitespace-nowrap text-soft-blue"
+                >
+                  <img src="/dist/img/icon-clock.svg" alt="clock icon" />
+                  <p>3 days left</p>
+                </div>
+              </div>
+
+              <hr class="mt-6 border-dark-blue-line" />
+
+              <div class="mt-4 flex items-center space-x-2">
+                <img
+                  src="/dist/img/image-avatar.png"
+                  alt="avatar"
+                  class="h-8 w-8 rounded-full"
+                />
+                <p class="text-white">
+                  <span class="text-soft-blue">Creation of</span>
+                  <a href="#" class="hover:text-cyan">mohdx nizamv</a>
+                </p>
+              </div>
+            </section>
+          </main>
+          <!--  -->
+          <main>
+            <section
+              class="mx-5 max-w-xs rounded-xl bg-dark-blue-card-bg p-5 shadow-2xl"
+            >
+              <a
+                href="#"
+                class="group relative block overflow-hidden rounded-md"
+              >
+                <div
+                  class="invisible absolute inset-0 bg-cyan/50 group-hover:visible"
+                >
+                  <img
+                    src="/dist/img/icon-view.svg"
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                    alt="eye icon"
+                  />
+                </div>
+                <img
+                  src="/dist/img/lieutenant.png"
+                  alt="equilibrium"
+                  class="rounded-lg"
+                />
+              </a>
+
+              <h1>
+                <a
+                  href="#"
+                  class="my-4 block text-lg font-semibold text-white hover:text-cyan"
+                  >LIEUTENANT #3429</a
+                >
+              </h1>
+
+              <p class="font-light text-soft-blue">100 Honor + 100 BUSD.</p>
+
+              <div class="mt-4 flex items-center justify-between">
+                <div class="flex space-x-2 text-cyan">
+                  <img
+                    src="/dist/img/icon-binance.svg"
+                    alt="ethereum icon"
+                    class="w-5"
+                  />
+                  <p>1.0 BNB</p>
+                </div>
+                <div
+                  class="flex items-center space-x-2 whitespace-nowrap text-soft-blue"
+                >
+                  <img src="/dist/img/icon-clock.svg" alt="clock icon" />
+                  <p>3 days left</p>
+                </div>
+              </div>
+
+              <hr class="mt-6 border-dark-blue-line" />
+
+              <div class="mt-4 flex items-center space-x-2">
+                <img
+                  src="/dist/img/image-avatar.png"
+                  alt="avatar"
+                  class="h-8 w-8 rounded-full"
+                />
+                <p class="text-white">
+                  <span class="text-soft-blue">Creation of</span>
+                  <a href="#" class="hover:text-cyan">mohdx nizamv</a>
+                </p>
+              </div>
+            </section>
+          </main>
+          <!--  -->
+        </div>
       </div>
     </section>
 
-    <!-- Hero Section -->
-    <section id="hero">
-      <!-- Flex Container -->
-      <div
-        class="container mx-auto mt-20 flex flex-col-reverse items-center space-y-0 px-6 md:flex-row md:space-y-0"
-      >
-        <!-- Left Item -->
-        <div class="mb-14 flex flex-col space-y-8 md:w-1/2">
-          <h1 class="max-w-md text-center text-4xl md:text-left md:text-5xl">
-            What is Honor Protocol ?
-          </h1>
-          <p class="max-w-lg font-Josefin md:text-left">
-            Honor Protocol will be the world's first global decentralized
-            cryptocurrency market platform that only ensures the world's first
-            based DeFi project platform. This service will be a gateway to more
-            than 500 million users worldwide to sending, receiving, spending and
-            access to a more secure based DeFi project based cryptocurrency.
-          </p>
-          <p class="max-w-lg font-Josefin md:text-left">
-            Honor Protocol based DeFi project that will be driven alongside the
-            communities built on the Binance Smart Chain #BSC and will support
-            collaboration over time with major blockchain. Honor Protocol will
-            bring the most revolutionary mechanisms to the ecosystem such as
-            capita gain, staking / dividend, governance platform, education
-            center, marketplace, visual development and various ecosystem
-            development in the future as long as it complies with based DeFi
-            project.
-          </p>
+    <!--  -->
+    <section id="nft2">
+      <div class="container mx-auto max-w-screen-xl py-6 sm:px-6 xl:px-8">
+        <div
+          class="grid grid-cols-1 gap-x-4 gap-y-6 pt-8 md:grid-cols-3 xl:grid-cols-4 xl:gap-x-6"
+        >
+          <main>
+            <section
+              class="mx-5 max-w-xs rounded-xl bg-dark-blue-card-bg p-5 shadow-2xl"
+            >
+              <a
+                href="#"
+                class="group relative block overflow-hidden rounded-md"
+              >
+                <div
+                  class="invisible absolute inset-0 bg-cyan/50 group-hover:visible"
+                >
+                  <img
+                    src="/dist/img/icon-view.svg"
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                    alt="eye icon"
+                  />
+                </div>
+                <img
+                  src="/dist/img/captain.png"
+                  alt="equilibrium"
+                  class="rounded-lg"
+                />
+              </a>
 
-          <div class="flex justify-start">
-            <a href="nftpages.html" class="btn hidden md:block"> See All </a>
-          </div>
-          <!-- Bottom Button Container -->
-          <div class="mt-10 flex justify-center md:hidden">
-            <a href="./nftpages.html" class="btn w-full md:hidden">See All</a>
-          </div>
+              <h1>
+                <a
+                  href="#"
+                  class="my-4 block text-lg font-semibold text-white hover:text-cyan"
+                  >CAPTAIN #3429</a
+                >
+              </h1>
+
+              <p class="font-light text-soft-blue">250 Honor + 250 BUSD.</p>
+
+              <div class="mt-4 flex items-center justify-between">
+                <div class="flex space-x-2 text-cyan">
+                  <img
+                    src="/dist/img/icon-binance.svg"
+                    alt="ethereum icon"
+                    class="w-5"
+                  />
+                  <p>1.0 BNB</p>
+                </div>
+                <div
+                  class="flex items-center space-x-2 whitespace-nowrap text-soft-blue"
+                >
+                  <img src="/dist/img/icon-clock.svg" alt="clock icon" />
+                  <p>3 days left</p>
+                </div>
+              </div>
+
+              <hr class="mt-6 border-dark-blue-line" />
+
+              <div class="mt-4 flex items-center space-x-2">
+                <img
+                  src="/dist/img/image-avatar.png"
+                  alt="avatar"
+                  class="h-8 w-8 rounded-full"
+                />
+                <p class="text-white">
+                  <span class="text-soft-blue">Creation of</span>
+                  <a href="#" class="hover:text-cyan">mohdx nizamv</a>
+                </p>
+              </div>
+            </section>
+          </main>
+          <!--  -->
+          <main>
+            <section
+              class="mx-5 max-w-xs rounded-xl bg-dark-blue-card-bg p-5 shadow-2xl"
+            >
+              <a
+                href="#"
+                class="group relative block overflow-hidden rounded-md"
+              >
+                <div
+                  class="invisible absolute inset-0 bg-cyan/50 group-hover:visible"
+                >
+                  <img
+                    src="/dist/img/icon-view.svg"
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                    alt="eye icon"
+                  />
+                </div>
+                <img
+                  src="/dist/img/major.png"
+                  alt="equilibrium"
+                  class="rounded-lg"
+                />
+              </a>
+
+              <h1>
+                <a
+                  href="#"
+                  class="my-4 block text-lg font-semibold text-white hover:text-cyan"
+                  >MAJOR #3429</a
+                >
+              </h1>
+
+              <p class="font-light text-soft-blue">500 Honor + 500 BUSD.</p>
+
+              <div class="mt-4 flex items-center justify-between">
+                <div class="flex space-x-2 text-cyan">
+                  <img
+                    src="/dist/img/icon-binance.svg"
+                    alt="ethereum icon"
+                    class="w-5"
+                  />
+                  <p>1.0 BNB</p>
+                </div>
+                <div
+                  class="flex items-center space-x-2 whitespace-nowrap text-soft-blue"
+                >
+                  <img src="/dist/img/icon-clock.svg" alt="clock icon" />
+                  <p>3 days left</p>
+                </div>
+              </div>
+
+              <hr class="mt-6 border-dark-blue-line" />
+
+              <div class="mt-4 flex items-center space-x-2">
+                <img
+                  src="/dist/img/image-avatar.png"
+                  alt="avatar"
+                  class="h-8 w-8 rounded-full"
+                />
+                <p class="text-white">
+                  <span class="text-soft-blue">Creation of</span>
+                  <a href="#" class="hover:text-cyan">mohdx nizamv</a>
+                </p>
+              </div>
+            </section>
+          </main>
+          <!--  -->
+          <main>
+            <section
+              class="mx-5 max-w-xs rounded-xl bg-dark-blue-card-bg p-5 shadow-2xl"
+            >
+              <a
+                href="#"
+                class="group relative block overflow-hidden rounded-md"
+              >
+                <div
+                  class="invisible absolute inset-0 bg-cyan/50 group-hover:visible"
+                >
+                  <img
+                    src="/dist/img/icon-view.svg"
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                    alt="eye icon"
+                  />
+                </div>
+                <img
+                  src="/dist/img/colonel.png"
+                  alt="equilibrium"
+                  class="rounded-lg"
+                />
+              </a>
+
+              <h1>
+                <a
+                  href="#"
+                  class="my-4 block text-lg font-semibold text-white hover:text-cyan"
+                  >COLONEL #3429</a
+                >
+              </h1>
+
+              <p class="font-light text-soft-blue">1000 Honor + 1000 BUSD.</p>
+
+              <div class="mt-4 flex items-center justify-between">
+                <div class="flex space-x-2 text-cyan">
+                  <img
+                    src="/dist/img/icon-binance.svg"
+                    alt="ethereum icon"
+                    class="w-5"
+                  />
+                  <p>1.0 BNB</p>
+                </div>
+                <div
+                  class="flex items-center space-x-2 whitespace-nowrap text-soft-blue"
+                >
+                  <img src="/dist/img/icon-clock.svg" alt="clock icon" />
+                  <p>3 days left</p>
+                </div>
+              </div>
+
+              <hr class="mt-6 border-dark-blue-line" />
+
+              <div class="mt-4 flex items-center space-x-2">
+                <img
+                  src="/dist/img/image-avatar.png"
+                  alt="avatar"
+                  class="h-8 w-8 rounded-full"
+                />
+                <p class="text-white">
+                  <span class="text-soft-blue">Creation of</span>
+                  <a href="#" class="hover:text-cyan">mohdx nizamv</a>
+                </p>
+              </div>
+            </section>
+          </main>
+          <!--  -->
+          <main>
+            <section
+              class="mx-5 max-w-xs rounded-xl bg-dark-blue-card-bg p-5 shadow-2xl"
+            >
+              <a
+                href="#"
+                class="group relative block overflow-hidden rounded-md"
+              >
+                <div
+                  class="invisible absolute inset-0 bg-cyan/50 group-hover:visible"
+                >
+                  <img
+                    src="/dist/img/icon-view.svg"
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                    alt="eye icon"
+                  />
+                </div>
+                <img
+                  src="/dist/img/general.png"
+                  alt="equilibrium"
+                  class="rounded-lg"
+                />
+              </a>
+
+              <h1>
+                <a
+                  href="#"
+                  class="my-4 block text-lg font-semibold text-white hover:text-cyan"
+                  >GENERAL #3429</a
+                >
+              </h1>
+
+              <p class="font-light text-soft-blue">5000 Honor + 5000 BUSD.</p>
+
+              <div class="mt-4 flex items-center justify-between">
+                <div class="flex space-x-2 text-cyan">
+                  <img
+                    src="/dist/img/icon-binance.svg"
+                    alt="ethereum icon"
+                    class="w-5"
+                  />
+                  <p>1.0 BNB</p>
+                </div>
+                <div
+                  class="flex items-center space-x-2 whitespace-nowrap text-soft-blue"
+                >
+                  <img src="/dist/img/icon-clock.svg" alt="clock icon" />
+                  <p>3 days left</p>
+                </div>
+              </div>
+
+              <hr class="mt-6 border-dark-blue-line" />
+
+              <div class="mt-4 flex items-center space-x-2">
+                <img
+                  src="/dist/img/image-avatar.png"
+                  alt="avatar"
+                  class="h-8 w-8 rounded-full"
+                />
+                <p class="text-white">
+                  <span class="text-soft-blue">Creation of</span>
+                  <a href="#" class="hover:text-cyan">mohdx nizamv</a>
+                </p>
+              </div>
+            </section>
+          </main>
+          <!--  -->
         </div>
-        <!-- Image -->
-        <div class="md:w-1/2">
-          <img
-            src="./dist/img/bgb.png"
-            class="mx-auto"
-            alt="Intro illustration"
-          />
+      </div>
+    </section>
+    <!-- Footer -->
+    <section id="footer">
+      <div class="border-base-100 bg-base-100 mt-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 gap-8 pt-8 lg:grid-cols-2">
+            <div>
+              <img
+                class="h-10 w-auto rounded-lg"
+                alt="#"
+                src="/dist/img/salam-x-phone.png"
+              />
+              <p class="mt-4 text-sm">
+                Technology needs to support human initiatives not substitute
+                them.
+              </p>
+              <a
+                class="text-textPrimary dark:text-dmTextPrimary mt-4 text-sm hover:underline"
+                href="nizam.active@gmail.com"
+                id="email"
+                >nizam.active@gmail.com</a
+              >
+            </div>
+            <div class="grid grid-cols-1 gap-8 xl:grid-cols-2">
+              <div class="text-sm">
+                <p class="text-textPrimary dark:text-dmTextPrimary mb-2">
+                  Our community
+                </p>
+                <ul>
+                  <li class="mt-2">
+                    <a
+                      class="hover:underline"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer"
+                      >Twitter</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <a
+                      class="hover:underline"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <a
+                      class="hover:underline"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <a
+                      class="hover:underline"
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer"
+                      >Telegram</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="text-sm">
+                <p class="text-textPrimary dark:text-dmTextPrimary mb-2">
+                  Company
+                </p>
+                <ul>
+                  <li class="mt-2">
+                    <a
+                      class="hover:underline"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer"
+                      >About us</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <a
+                      class="hover:underline"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer"
+                      >Career</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <a
+                      class="hover:underline"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer"
+                      >Terms and Conditions</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p class="pt-16 pb-8 text-center text-sm">
+            © 2022 Honor Protocol. All Rights Reserved.
+          </p>
         </div>
       </div>
     </section>
     <!--  -->
-    <script src="./src/main.js"></script>
+    <script type="module" src="./src/main.js"></script>
+
+    <script src="./src/navToggle.js"></script>
 
     <script src="./src/darkmode.js"></script>
 
